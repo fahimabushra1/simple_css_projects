@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Projects</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .green_part {
+            background-color: #085205;
+            width: 500px;
+            height: 250px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .red_part {
+            background-color: #ff0000;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            left: 50px;
+            translate: 120px;
+            border-radius: 50%;
+        }
+
+        .white_part {
+            background-color: #ffffff;
+            width: 500px;
+            height: 250px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .brown_part {
+            background-color: #ff0000;
+            width: 500px;
+            height: 250px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .star {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid gold;
+            position: absolute;
+            transform: rotate(35deg);
+            translate: 120px;
+            top: 90px;
+            left: 35px;
+        }
+
+        .star::before {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 80px solid gold;
+            position: absolute;
+            top: -45px;
+            left: -65px;
+            content: '';
+            transform: rotate(-35deg);
+        }
+
+        .star::after {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid gold;
+            position: absolute;
+            top: -3px;
+            left: -105px;
+            content: '';
+            transform: rotate(-70deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>National flag of Bangladesh</h1>
+    <div class="green_part">
+        <div class="red_part"></div>
+    </div>
+    <h1>National flag of Japan</h1>
+    <div class="white_part">
+        <div class="red_part"></div>
+    </div>
+    <h1>National flag of Vietnam</h1>
+    <div class="brown_part">
+        <div class="star"></div>
+    </div>
+</body>
+
+</html>
