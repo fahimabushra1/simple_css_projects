@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .star {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid gold;
+            position: absolute;
+            transform: rotate(35deg);
+            translate: 120px;
+            top: 150px;
+            left: 550px;
+            text-align: center;
+        }
+
+        .star::before {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 80px solid gold;
+            position: absolute;
+            top: -45px;
+            left: -65px;
+            content: '';
+            transform: rotate(-35deg);
+        }
+
+        .star::after {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid gold;
+            position: absolute;
+            top: -3px;
+            left: -105px;
+            content: '';
+            transform: rotate(-70deg);
+        }
+        .sm_star {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid gold;
+            position: absolute;
+            transform: rotate(35deg);
+            translate: 120px;
+            top: 150px;
+            left: 550px;
+            text-align: center;
+        }
+
+        .sm_star::before {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 80px solid gold;
+            position: absolute;
+            top: -45px;
+            left: -65px;
+            content: '';
+            transform: rotate(-35deg);
+        }
+
+        .sm_star::after {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid gold;
+            position: absolute;
+            top: -3px;
+            left: -105px;
+            content: '';
+            transform: rotate(-70deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>star</h1>
+    <div class="star"></div>
+    <div class="sm_star"></div>
+</body>
+
+</html>
