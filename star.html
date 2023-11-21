@@ -13,19 +13,18 @@
         .star {
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
-            border-bottom: 70px solid gold;
+            border-bottom: 70px solid silver;
             position: absolute;
             transform: rotate(35deg);
             translate: 120px;
             top: 150px;
             left: 550px;
-            text-align: center;
         }
 
         .star::before {
             border-left: 30px solid transparent;
             border-right: 30px solid transparent;
-            border-bottom: 80px solid gold;
+            border-bottom: 80px solid silver;
             position: absolute;
             top: -45px;
             left: -65px;
@@ -36,14 +35,15 @@
         .star::after {
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
-            border-bottom: 70px solid gold;
+            border-bottom: 70px solid silver;
             position: absolute;
             top: -3px;
             left: -105px;
             content: '';
             transform: rotate(-70deg);
         }
-        .sm_star {
+
+        .s_star {
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
             border-bottom: 70px solid gold;
@@ -51,11 +51,11 @@
             transform: rotate(35deg);
             translate: 120px;
             top: 150px;
-            left: 550px;
+            left: 300px;
             text-align: center;
         }
 
-        .sm_star::before {
+        .s_star::before {
             border-left: 30px solid transparent;
             border-right: 30px solid transparent;
             border-bottom: 80px solid gold;
@@ -66,7 +66,7 @@
             transform: rotate(-35deg);
         }
 
-        .sm_star::after {
+        .s_star::after {
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
             border-bottom: 70px solid gold;
@@ -76,13 +76,46 @@
             content: '';
             transform: rotate(-70deg);
         }
+
+        .t_star {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid #ff0000;
+            position: absolute;
+            transform: rotate(36deg);
+            top: 150px;
+            right: 300px;
+        }
+
+        .t_star::before {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 80px solid #ff0000;
+            position: absolute;
+            content: "";
+            top: -50px;
+            left: -70px;
+            transform: rotate(-36deg);
+        }
+
+        .t_star::after {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid#ff0000;
+            position: absolute;
+            top: -2px;
+            left: -105px;
+            content: '';
+            transform: rotate(-72deg);
+        }
     </style>
 </head>
 
 <body>
     <h1>star</h1>
     <div class="star"></div>
-    <div class="sm_star"></div>
+    <div class="s_star"></div>
+    <div class="t_star"></div>
 </body>
 
 </html>
