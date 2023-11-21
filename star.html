@@ -101,12 +101,44 @@
         .t_star::after {
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
-            border-bottom: 70px solid#ff0000;
+            border-bottom: 70px solid#00ff00;
             position: absolute;
             top: -2px;
             left: -105px;
             content: '';
             transform: rotate(-72deg);
+        }
+
+        .f_star {
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 20px solid hotpink;
+            position: absolute;
+            bottom: 170px;
+            right: 500px;
+            transform: rotate(46deg);
+        }
+
+        .f_star::before {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 30px solid hotpink;
+            position: absolute;
+            content: "";
+            top: -18px;
+            left: -25px;
+            transform: rotate(320deg);
+        }
+
+        .f_star::after {
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 20px solid hotpink;
+            position: absolute;
+            content: "";
+            transform: rotate(-70deg);
+            top: -3px;
+            left: -40px;
         }
     </style>
 </head>
@@ -116,6 +148,7 @@
     <div class="star"></div>
     <div class="s_star"></div>
     <div class="t_star"></div>
+    <div class="f_star"></div>
 </body>
 
 </html>
